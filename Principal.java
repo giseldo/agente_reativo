@@ -9,11 +9,11 @@ public class Principal {
 	public static void main(String[] args) throws InterruptedException {
 		// cria um agente
 		Agente agente = new Agente();
-		int tamanhoAmbiente = 4;
+		int tamanhoAmbiente = 2;
 		// cria um ambiente do tipo matriz/tabuleiro (tamanho x tamanho) 
 		Ambiente ambiente = new Ambiente(tamanhoAmbiente);
 		// posiciona no ambiente o agente em uma posi�o especifica
-		PosXY posicaoAgente = new PosXY(2, 2);
+		PosXY posicaoAgente = new PosXY(0, 0);
 		ambiente.setPosicaoAgenteTabuleiro(posicaoAgente);
 		
     // 
