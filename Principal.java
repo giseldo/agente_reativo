@@ -9,11 +9,11 @@ public class Principal {
 	public static void main(String[] args) throws InterruptedException {
 		// cria um agente
 		Agente agente = new Agente();
-		int tamanhoAmbiente = 2;
+		int tamanhoAmbiente = 4;
 		// cria um ambiente do tipo matriz/tabuleiro (tamanho x tamanho) 
 		Ambiente ambiente = new Ambiente(tamanhoAmbiente);
 		// posiciona no ambiente o agente em uma posi�o especifica
-		PosXY posicaoAgente = new PosXY(1, 1);
+		PosXY posicaoAgente = new PosXY(2, 2);
 		ambiente.setPosicaoAgenteTabuleiro(posicaoAgente);
 		
     // 
@@ -31,7 +31,7 @@ public class Principal {
 			Util.exibir(ambiente);
       // adicionei essa saída loop para ele nao ficar em loop inifinito
       contador++;
-			if (contador > 2) break;
+			if (contador > 100) break;
 		}
 
 	}
