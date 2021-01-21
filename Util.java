@@ -1,5 +1,3 @@
-package ia;
-
 public class Util {
 
 	public static void exibir(Ambiente ambiente) throws InterruptedException {

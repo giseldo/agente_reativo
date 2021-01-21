@@ -1,5 +1,3 @@
-package ia;
-
 public class Agente {
 
 	char[] percepcao;
@@ -14,18 +12,18 @@ public class Agente {
 	
 	/**
 	 * Age sobre o ambiente:
-	 * (a) Limpa o quadrado em que está e
-	 * (b) Move para o próximo quadrado sujo, seguindo a regra de prioridade:
+	 * (a) Limpa o quadrado em que estï¿½ e
+	 * (b) Move para o prï¿½ximo quadrado sujo, seguindo a regra de prioridade:
 	 * Norte, Sul,Leste e Oeste
 	 * @param ambiente O agente age/atua sobre o ambiente
 	 */
 	public void acao(Ambiente ambiente) {
 		
-		PosXY posXY = ambiente.getAgentePosXY(); // retorna a posição atual do agente
+		PosXY posXY = ambiente.getAgentePosXY(); // retorna a posiï¿½o atual do agente
 		int posX = posXY.getPosX();
 		int posY = posXY.getPosY();
 
-		for (int i = 0; i < percepcao.length; i++) { // loop nas percepções
+		for (int i = 0; i < percepcao.length; i++) { // loop nas percepï¿½es
 			if (percepcao[i] == EstadoQuadrado.SUJO) {
 				if (i == PontosCardeais.NORTE) { 
 					ambiente.limparPosicaoTabuleiro(posX, posY);

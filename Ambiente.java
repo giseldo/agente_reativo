@@ -1,5 +1,3 @@
-package ia;
-
 public class Ambiente {
 
 	private int tamanhoAmbiente;
@@ -7,9 +5,9 @@ public class Ambiente {
 	private char tabuleiro[][];
 
 	/**
-	 * Construtor do ambiente, inicializa um tabuleiro com todas as posições sujas
+	 * Construtor do ambiente, inicializa um tabuleiro com todas as posiï¿½es sujas
 	 * 
-	 * @param tamanhoAmbiente, ex: 2 -> Será criado uma Matriz 2 x 2
+	 * @param tamanhoAmbiente, ex: 2 -> Serï¿½ criado uma Matriz 2 x 2
 	 */
 	public Ambiente(int tamanhoAmbiente) {
 		this.tamanhoAmbiente = tamanhoAmbiente;
@@ -23,9 +21,9 @@ public class Ambiente {
 	}
 
 	/**
-	 * Faz uma busca no tabuleiro pela posiçao XY do agente
+	 * Faz uma busca no tabuleiro pela posiï¿½ao XY do agente
 	 * 
-	 * @return Retorna a posição X, Y do Agente no tabuleiro
+	 * @return Retorna a posiï¿½o X, Y do Agente no tabuleiro
 	 */
 	public PosXY getAgentePosXY() {
 		int posXAgente = -1, posYAgente = -1;
@@ -42,7 +40,7 @@ public class Ambiente {
 	}
 
 	/**
-	 * Altera a posição do agente no tabuleiro
+	 * Altera a posiï¿½o do agente no tabuleiro
 	 * 
 	 * @param posX posicao X
 	 * @param posY posicao Y
@@ -61,13 +59,13 @@ public class Ambiente {
 	}
 
 	/**
-	 * Retorna uma lista com as posições(se sujo, ou limpo) adjacentes ao agente, o
-	 * tabuleiro sabe onde o agente está, sabe se tem sujeira. Ex: [S,S,L,S]
+	 * Retorna uma lista com as posiï¿½es(se sujo, ou limpo) adjacentes ao agente, o
+	 * tabuleiro sabe onde o agente estï¿½, sabe se tem sujeira. Ex: [S,S,L,S]
 	 * equivale a Norte Sujo, Sul Sujo, Leste Limpo, Oeste Sujo
 	 * 
-	 * @return Uma lista com as posições, Norte, Sul, Leste e Oeste a partir do
-	 *         agente informando se tem sujeira ou se está limpo, se está nas bordas
-	 *         do tabuleiro e não há nada retorna V (Vazio).
+	 * @return Uma lista com as posiï¿½es, Norte, Sul, Leste e Oeste a partir do
+	 *         agente informando se tem sujeira ou se estï¿½ limpo, se estï¿½ nas bordas
+	 *         do tabuleiro e nï¿½o hï¿½ nada retorna V (Vazio).
 	 */
 	public char[] getPercepcoesAdjacentesAoAgente() {
 		
@@ -92,10 +90,10 @@ public class Ambiente {
 	}
 
 	/**
-	 * Limpa uma posição do tabuleiro
+	 * Limpa uma posiï¿½o do tabuleiro
 	 * 
-	 * @param posX Posição X
-	 * @param posY Posição Y
+	 * @param posX Posiï¿½o X
+	 * @param posY Posiï¿½o Y
 	 */
 	public void limparPosicaoTabuleiro(int posX, int posY) {
 		this.tabuleiro[posX][posY] = EstadoQuadrado.LIMPO;

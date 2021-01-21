@@ -1,5 +1,3 @@
-package ia;
-
 public class PosXY {
 	int posX;
 	int posY;
