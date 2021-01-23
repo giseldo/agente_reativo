@@ -16,22 +16,16 @@ public class Principal {
 		PosXY posicaoAgente = new PosXY(0, 0);
 		ambiente.setPosicaoAgenteTabuleiro(posicaoAgente);
 		
-    // 
-    int contador = 0;
-		// exibe o ambiente para o usuario acompanhar o que esta acontecendo
 		Util.exibir(ambiente);
 		// loop infinito
 		while (true) {
       
-      // agente recebe a percep�o do ambiente
+			// agente recebe a percep�o do ambiente
 			agente.setPercepcao(ambiente.getPercepcoesAdjacentesAoAgente());
 			// age sobre o ambiente
  			agente.acao(ambiente);
  		    // exibe o ambiente para o usuario acompanhar o que esta acontecendo
 			Util.exibir(ambiente);
-      // adicionei essa saída loop para ele nao ficar em loop inifinito
-      contador++;
-			if (contador > 100) break;
 		}
 
 	}
