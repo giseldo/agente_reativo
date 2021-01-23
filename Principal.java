@@ -19,7 +19,6 @@ public class Principal {
 		Util.exibir(ambiente);
 		// loop infinito
 		while (true) {
-      
 			// agente recebe a percep�o do ambiente
 			agente.setPercepcao(ambiente.getPercepcoesAdjacentesAoAgente());
 			// age sobre o ambiente
