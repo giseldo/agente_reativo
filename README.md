@@ -1,4 +1,7 @@
 # agente reativo
+
+Utilize o repl.it, ou o eclipse
+
 Este é um agente reativo simples.
 
 Compile (javac Principal.java) e execute o arquivo Principal (java Principal)
