@@ -45,7 +45,7 @@ public class Ambiente {
 	 * @param posX posicao X
 	 * @param posY posicao Y
 	 */
-	public void setPosicaoAgenteTabuleiro(PosXY posXY) {
+	public void setNovaPosicaoAgenteTabuleiro(PosXY posXY) {
 		this.tabuleiro[posXY.getPosX()][posXY.getPosY()] = EstadoQuadrado.AGENTE;
 	}
 
@@ -95,7 +95,7 @@ public class Ambiente {
 	 * @param posX Posi�o X
 	 * @param posY Posi�o Y
 	 */
-	public void limparPosicaoTabuleiro(int posX, int posY) {
+	public void limparPosicaoTabuleiroSeEstiverSujo(int posX, int posY) {
 		this.tabuleiro[posX][posY] = EstadoQuadrado.LIMPO;
 	}
 
