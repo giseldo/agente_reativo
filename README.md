@@ -10,6 +10,6 @@ Este arquivo pode ser facilmente executado com a IDE na nuvem https://repl.it
 
 Basta selecionar a opção Run no Repl.it
 
-Esse projeto se inspirou no projeto 
+Esse projeto é livremente inspirado no projeto 
 https://github.com/Zurubabel/Inteligencia_Artificial de autoria do Zurubabel
 
